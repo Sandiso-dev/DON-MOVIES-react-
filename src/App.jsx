@@ -62,7 +62,7 @@ function App() {
 
 
   return (
-    <div className="movies-app"> 
+    <div className="movies-app movie-list"> 
 
     <div className="logo-spot">
       <MovieHeading heading='Don Movies'/>
@@ -71,7 +71,7 @@ function App() {
       setSearchMovie={setSearchMovie}/>
     </div>
 
-      <div className="row">
+      <div className="row move-list">
       <MovieList
        movies={movies} 
        favComponent={AddToFav}
@@ -82,7 +82,7 @@ function App() {
       <MovieHeading heading='Favourites'/>
       </div>
 
-      <div className="row">
+      <div className="row movie-list">
       <MovieList
        movies={favs} 
        favComponent={RemoveFav}
