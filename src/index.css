@@ -1,0 +1,104 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+
+body{
+    background: #141414;
+    color: white;
+    font-family: 'Geologica', sans-serif;
+}
+
+.logo-spot{
+    margin-bottom: 30px;
+}
+
+input{
+    margin-top: 10px;
+    border-radius: 13px;
+    border: none;
+    height: 35px;
+    background-color: #b9a6a6;
+    color: white;
+    font-size: 17px;
+    padding-left: 7px;
+    margin-left: 10px;
+}
+
+
+.movies-app > .row{
+    overflow-x:auto;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scrollbar-color: black;
+    scrollbar-track-color: black;
+}
+
+.movies-app img {
+    width: 250px;
+}
+
+.image-container {
+    width: 250px;
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.image-container:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.image-container:hover .overlay{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    background: rgb(0,0,0.8);
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 19px;
+    padding: 20px;
+    align-items: center;
+}
+
+@media screen and (max-width: 660px){
+
+    .movies-app img {
+        width: 230px;
+    }
+    
+    .image-container {
+        width: 230px;
+      
+    }
+
+    
+.overlay{
+    font-size: 14.5px;
+    padding: 9px; 
+}
+
+}
+
+@media screen and (max-width: 460px){
+
+    .movies-app img {
+        width: 200px;
+    }
+    
+    .image-container {
+        width: 200px;
+      
+    }
+
+    
+.overlay{
+    font-size: 12.5px;
+    padding: 7px; 
+}
+
+}
